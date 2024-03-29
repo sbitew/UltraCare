@@ -33,7 +33,7 @@
 
 <div class="header">
   <h1>Ultra Care Adult Family Home LLC</h1>
-  <p> A Dream Home For The Elderly</p>
+  <h3 style="font-style: italic"> Dream Home For The Elderly</h3>
    <h2>(860)-325-2598</h2>
 </div>
 <!--
@@ -320,6 +320,11 @@ Assistance with transfers</li>
   </div>
  </div>
 
+
+
+
+
+<!-- form starts here
 <div style="background-color: #d9dddc;border-left-style: solid; border-left-width: medium;" class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
   <div class="container mx-auto">
     <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
@@ -366,30 +371,32 @@ Assistance with transfers</li>
   </div>
 </div>
 
-<!--
+form ends here-->
+
+---------------------
 <div class="container">
       <span class="big-circle"></span>
       <img src="img/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
+          <h1 style="color: rgb(154, 214, 194);" >Let's get in touch</h1>
           <p class="text">
-            We would love to hear from you! Please fill out the form below, and one of our caring staff members will be in touch with you shortly to answer any questions you may have about our adult care services or to schedule a visit to our family home. Thank you for considering Ultra care Adult Family Home as your trusted provider for elderly care.
+            We would love to hear from you! Please fill out the form below, and one of our caring staff members will be in touch with you shortly to answer any questions you may have about our adult care services or to schedule a visit to our family home. Thank you for considering Ultra Care Adult Family Home as your trusted provider for elderly care.
       
           </p>
 
           <div class="info">
             <div class="information">
               <img src="Images/location.png" class="icon" alt="" />
-              <p>8713 45th Dr Ne,Marysville, Wa 98270</p>
+              
             </div>
             <div class="information">
               <img src="Images/email.png" class="icon" alt="" />
-              <p>ultracareafh@outlook.com</p>
+              <h4>ultracareafh@outlook.com</h4>
             </div>
             <div class="information">
               <img src="Images/phone.png" class="icon" alt="" />
-              <p>(860)-325-2598</p>
+              <h4>(860)-325-2598</h4>
             </div>
           </div>
 
@@ -409,17 +416,47 @@ Assistance with transfers</li>
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
-          </div> 
+         </div> -->
         </div>
 
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
 
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="1f4a68e3-af78-49bc-ba32-19c49a9bc75c" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+            <input type="text" name="name" id="name" placeholder=" Your Full Name " required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label> <br>
+            <input type="email" name="email" id="email" placeholder=" Your Email" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="phone" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Phone Number</label><br>
+            <input type="number" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="w-full px-3 py-4 text-gray bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
+<!--
           <form action="https://formsubmit.co/ef50bb5749a1908b5670b92398e7a2dc" method="POST" enctype="text/plain" autocomplete="off" >
             <h3 class="title">Contact us</h3>
 
-  <!--         <div class="input-container">
+          <div class="input-container">
               <input type="text" name="name" class="input" placeholder="yourname" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full Name'"/>
               <label for="">Your Full Name</label>
               <span>Your Full name</span>
@@ -496,10 +533,10 @@ Assistance with transfers</li>
             </div>
             <input type="submit" value="Send" class="btn" />
             
-          </form>
+          </form>-->
         </div>
       </div>
-    
+    </div>
 <!--
     <div id="top_of_page">
 		<a class="contact-button" href="#top">Back to Top</a>
